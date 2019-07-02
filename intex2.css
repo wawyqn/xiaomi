@@ -292,6 +292,19 @@ a{
     color: #424242;
     float: right;
 }
+.main-top-right i{
+    font-size: 20px;
+    line-height: 58px;
+    color: #b0b0b0;
+    float: right;
+    margin: 0 8px;
+}
+.main-top-right:hover{
+    color: #ff6700;
+}
+.main-top-right:hover .icon-you{
+    color: #ff6700;
+}
 .heerder-right1 a, span{
     width: 100%;
     color: #b0b0b0;
@@ -410,6 +423,9 @@ a{
 .hongse--1{
     padding: 100px 0 0px;
 }
+.hongse{
+    margin-top: 20px;
+}
 .datupian img{
     width: 1226px;
 }
@@ -426,7 +442,7 @@ a{
 .middle{
     width: 1226px;
     background-color: #f5f5f5;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 auto;
 }
 .jiadian{
@@ -455,14 +471,21 @@ a{
     font-size: 16px;
     float: left;
     margin-left: 30px;
-    border-bottom: 2px solid #ff6700;
-    color: #ff6700; 
+    color: #333; 
+}
+.youmianwenzi-remen:hover{
+    color: #ff6700;
+    border-bottom: 1px solid #ff6700;
 }
 .youmianwenzi{
     font-size: 16px;
     float: left;
     margin-left: 30px;
     border-bottom: 2px;
+}
+.youmianwenzi:hover{
+    color: #ff6700;
+    border-bottom: 1px solid #ff6700;
 }
 .zuo{
     width: 248px;
@@ -471,10 +494,15 @@ a{
     float: left;
     margin: 0 0 -14px -14px;
 }
+.zuo img:hover{
+    box-shadow: 0 0 18px 1px #cccccc;
+    transform:translateY(-5px) ;
+    transition: 1s;
+}
 .mingzi{
     width: 234px;
     height: 300px;
-    background-color:pink;
+    /* background-color:pink; */
     margin: 0 0 14px 14px;
 }
 .zuo img{
@@ -736,6 +764,53 @@ a{
     float: left;
     background-color: white;
 }
+.zuoj-1-1{
+    width: 20px;
+    height: 48px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    background-color: rgba(66, 66, 66, 0.2);
+    display: none;
+}
+.rementu-1-1:hover .zuoj-1-1{
+    display: block;
+}
+.rementu-1-1:hover .youj-1-1{
+    display: block;
+}
+.rementu-1:hover .zuoj-1-1{
+    display: block;
+}
+.rementu-1:hover .youj-1-1{
+    display: block;
+}
+.zuoj-1-1:hover{
+    background-color: rgba(66, 66, 66, 0.6)
+}
+.youj-1-1:hover{
+    background-color: rgba(66, 66, 66, 0.6)
+}
+.youj-1-1{
+    width: 20px;
+    height: 48px;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    background-color: rgba(66, 66, 66, 0.2);
+    display: none;
+}
+.icon-zuo1{
+    color: #fafafa;
+    font-size: 18px;
+    line-height: 48px;
+}
+.icon-you2{
+    color: #fafafa;
+    font-size: 18px;
+    line-height: 48px;
+    float: right;
+}
 .rementu-1:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transform: translate3d(0, -2px,0);
@@ -750,6 +825,7 @@ a{
     float: left;
     background-color: white;
     margin: 0 0 14px 14px;
+    position: relative;
 }
 .rementu-1 img{
     width: 296px;
